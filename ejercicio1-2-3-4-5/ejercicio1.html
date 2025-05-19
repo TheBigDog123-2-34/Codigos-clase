@@ -1,0 +1,77 @@
+<html>
+<head>
+    <h1 id="Demo1"></h1>
+    <h2 id="Demo2"></h2>
+    <h3 id="Demo3"></h3>
+
+</head>
+
+<body>
+        
+        <button onclick="Funcion1()">Extraer</button>
+        <button onclick="Funcion2()">Extraer</button>
+        <button onclick="Funcion3()">Sustituir</button>
+        <button onclick="Funcion4()">Minuscula</button>
+        <button onclick="Funcion5()">Malluscula</button>
+    
+<script>
+        var nombre;
+        var Apaterno;
+        var Amaterno;
+        var completo;
+        nombre=prompt('Dime tu nombre');
+            Apaterno=prompt('Dime tu Apaterno');
+            Amaterno=prompt('Dime tu Amaterno');
+            completo=nombre+Apaterno+Amaterno;
+
+function Funcion1(){
+
+           
+            let X, Y;
+            X=nombre.length;
+            Y=completo.length;
+            document.getElementById("Demo1").innerHTML = "Hola.." + completo + "...Mucho gusto en conoserte " ;
+            document.getElementById("Demo2").innerHTML = "La cantidad de caracteres de tu Nombre es:" + X;
+            document.getElementById("Demo3").innerHTML = "La cantidad de tu nombre completo es" + Y;
+        }
+
+        function Funcion2(){
+            let extraccion;
+            extraccion = completo.slice(5,12);
+            document.getElementById("Demo1").innerHTML = "La extracion de tu nombre es:"+extraccion;
+            document.getElementById("Demo2").innerHTML = "";
+            document.getElementById("Demo3").innerHTML = ""+Y;
+
+        }
+
+        function Funcion3(){
+            
+            frase = prompt("Escribe una frase")
+            completo=frase;
+            document.getElementById("Demo1").innerHTML = "La frace es: "+completo;
+            document.getElementById("Demo2").innerHT = "por : "+ cambio;
+            document.getElementById("Demo3").innerHTML = "";
+
+        }
+
+        function Funcion4(){
+            completo=completo.toLowerCase();
+            document.getElementById("Demo1").innerHTML = "Tu nombre en minusculas es..."+completo;
+            document.getElementById("Demo2").innerHTML = "";
+            document.getElementById("Demo3").innerHTML = "";
+
+        }
+
+        function Funcion5(){
+            completo=completo.toUpperCase();
+            document.getElementById("Demo1").innerHTML = "Tu nombre en mayusculas es..."+completo;
+            document.getElementById("Demo2").innerHTML = "";
+            document.getElementById("Demo3").innerHTML = "";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
